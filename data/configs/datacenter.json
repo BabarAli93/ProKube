@@ -1,0 +1,35 @@
+{
+    "notes":"Datacenter Generation",
+    "nums": {
+        "num_clusters": 4,
+        "num_hosts": 4,
+        "hosts_per_cluster": 1,
+        "num_containers": 8,
+        "resources": 2,
+        "container_types": 1
+    },
+    "metrics": {
+        "ram":"mb",
+        "cpu":"core"
+    },
+    "container_conf" :{
+        "memory": {
+            "min": 1000,
+            "max": 1000,
+            "step": 1
+        },
+        "cpu": {
+            "min": 500,
+            "max": 500,
+            "step": 1
+        }
+    },
+    "contexts": ["gke_resonant-petal-367513_europe-west1-b_cluster-1", "gke_resonant-petal-367513_europe-west9-a_cluster-2", 
+    "gke_resonant-petal-367513_europe-west3-a_cluster-3", "gke_resonant-petal-367513_europe-west2-a_cluster-4"],
+    "image": "babarkhan93/yolotorch-prop:0.3",
+    "config_path": "~/.kube/config",
+    "datacenter_start_time": 0,
+    "datacenter_end_time": 5000,
+    "num_steps" : 20,
+    "seed": 42
+}

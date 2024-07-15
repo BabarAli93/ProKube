@@ -1,0 +1,6 @@
+This folder will have the list of all the schedulers. Schedulers may include:
+- Reinforcement learning's DQL etc.
+- Deep RL's IMPALA, A2C, A3C etc.
+- Proactive (LSTM) Deep RL (IMPALA with buffer replay)
+- Genetic Algorithm
+- Heuristic Ones
