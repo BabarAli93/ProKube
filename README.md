@@ -1,20 +1,19 @@
 # ProKube
 
-Deep Neural Network (DNN) and Machine Learning (ML) models/ inferences are producing highly accurate results
-demanding enormous computational resources. Limited on-premise resource of end-users gadgets drive to hosting inferences at
-user-facing locations in edge to cloud continuum with users require fast responses. Kubernetes hosted inferences with poor resource
-request estimation results in latency Service Level Agreement (SLA) violation and below par performance with higher end to end (E2E)
-delays. Lifetime static resource provisioning either hurt user experience for under resource provisioning or incur cost with
-over-provisioning. Dynamic scaling offer to remedy delay by upscaling leading to additional cost where a simple migration to a location
-offering latency in SLA bounds can reduce delay and minimize cost. Default Kubernetes scheduler works on load balancing principle
-where the Kubernetes pods are equally distributed among the cluster nodes based on resource availability with no consideration of
-latency sensitivity and migration support. To address this cost and delay challenges for ML inferences in the inherent heterogeneous,
-resource constrained and distributed edge environment, we propose ProKube which is a proactive container scaling and migration
-orchestrator to dynamically adjust the resources and container locations with a fair balance between cost and delay. ProKube is built in
-conjunction with Google Kubernetes Engine (GKE) enabling cross-cluster migration and/ or dynamic scaling. It further provisions
-support for regular addition of freshly collected logs into scheduling decision to handle the unpredictable network behaviour.
-Experiments conducted in heterogeneous edge settings show efficacy of ProKube to its counterparts in terms of lesser SLA violation
-rate, cost and delay.
+Deep Neural Network (DNN) and Machine Learning (ML) models/ inferences produce highly accurate results demanding
+enormous computational resources. The limited capacity of end-user smart gadgets drives companies to exploit computational
+resources in an edge-to-cloud continuum and host applications at user-facing locations with users requiring fast responses. Kubernetes
+hosted inferences with poor resource request estimation results in latency Service Level Agreement (SLA) violation and below par
+performance with higher end-to-end (E2E) delays. Lifetime static resource provisioning either hurts user experience for under-resource
+provisioning or incurs cost with over-provisioning. Dynamic scaling offers to remedy delay by upscaling leading to additional cost
+whereas a simple migration to another location offering latency in SLA bounds can reduce delay and minimize cost. To address this
+cost and delay challenges for ML inferences in the inherent heterogeneous, resource-constrained, and distributed edge environment,
+we propose ProKube which is a proactive container scaling and migration orchestrator to dynamically adjust the resources and
+container locations with a fair balance between cost and delay. ProKube is built in conjunction with Google Kubernetes Engine (GKE)
+enabling cross-cluster migration and/ or dynamic scaling. It further supports the regular addition of freshly collected logs into scheduling
+decisions to handle unpredictable network behavior. Experiments conducted in heterogeneous edge settings show the efficacy of
+ProKube to its counterparts Cost Greedy (CG), Latency Greedy (LG), and GeKube (GK). ProKube offers 68%, 7%, and 64% SLA
+violation reduction to CG, LG, and GK, respectively. It improves cost by 4.77 cores to LG and offers more cost of 3.94 to CG and GK.
 
 
 <p align="center">
