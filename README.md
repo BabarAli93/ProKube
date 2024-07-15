@@ -19,3 +19,4 @@ violation reduction to CG, LG, and GK, respectively. It improves cost by 4.77 co
 <p align="center">
   <img src="https://github.com/BabarAli93/ProKube/assets/50677432/25ee7984-03b1-477d-bf36-7a6869573143" alt="prokube">
 </p>
+[prokube.pdf](https://github.com/user-attachments/files/16234860/prokube.pdf)
