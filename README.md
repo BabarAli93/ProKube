@@ -22,6 +22,7 @@ more cost of 3.94 to CG and GK.
 </p>
 
 # Cite this work
+```bibtex
 @article{https://doi.org/10.1002/nem.2298,
 author = {Ali, Babar and Golec, Muhammed and Singh Gill, Sukhpal and Cuadrado, Felix and Uhlig, Steve},
 title = {ProKube: Proactive Kubernetes Orchestrator for Inference in Heterogeneous Edge Computing},
